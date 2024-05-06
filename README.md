@@ -3,16 +3,16 @@
 This is the official implementation for Concept-Level Causal Explanation Method for Brain Function Network Classification
 
 ## Running example
-Step 1. train and save model parameters, run the following statement in ```main.py```
+Step 1. train and save model parameters, run the following statement in ```main.py```:<br/>
 ```acc = trainAN.runCausal(nbepochs=20, lr=lr, wd=wd, seed=seeds[4], k=k, validIndex=validIndexs[4][k], lamba1=0.1)```
 
-Step 2. selecting the most important brain regions based on the trained model parameters
+Step 2. selecting the most important brain regions based on the trained model parameters.<br/>
 run ```test.py```
 
-Step 3. train other models based on the obtained important brain region features，run the following statement in ```main.py```
+Step 3. train other models based on the obtained important brain region features，run the following statement in ```main.py```:<br/>
 ```acc = trainInter.run(nbepochs=150, lr=lr, wd=wd, seed=seeds[4], k=k, validIndex=validIndexs[4][k])```
 
-If you want to compare with the model trained without the proposed brain region features, run the following statement in ```main.py```
+If you want to compare with the model trained without the proposed brain region features, run the following statement in ```main.py```:<br/>
 ```acc = trainNet.runOral(nbepochs=150, lr=lr, wd=wd, seed=seeds[4], k=k, validIndex=validIndexs[4][k])```
 
 ## Environment
