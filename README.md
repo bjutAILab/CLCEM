@@ -16,4 +16,4 @@ If you want to compare with the model trained without the proposed brain region 
 ```acc = trainNet.runOral(nbepochs=150, lr=lr, wd=wd, seed=seeds[4], k=k, validIndex=validIndexs[4][k])```
 
 ## Environment
-The code is developed on one NVIDIA RTX 3090 GPU with 24 GB memory and tested in Python 3.9.0 and PyTorch 1.10.2.
+The code is developed on one NVIDIA RTX 3090 GPU with 24 GB memory and tested in Python 3.9.0 and PyTorch 1.12.1, which includes GPU support via CUDA version 11.4
